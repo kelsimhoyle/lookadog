@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "lookadogc0904ff7": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
