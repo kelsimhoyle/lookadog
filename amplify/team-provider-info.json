@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-lookadog-dev-112038-authRole",
-      "UnauthRoleArn": "arn:aws:iam::596298045710:role/amplify-lookadog-dev-112038-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::596298045710:role/amplify-lookadog-dev-112038-authRole",
+      "AuthRoleName": "amplify-lookadog-dev-90340-authRole",
+      "UnauthRoleArn": "arn:aws:iam::596298045710:role/amplify-lookadog-dev-90340-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::596298045710:role/amplify-lookadog-dev-90340-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-lookadog-dev-112038-deployment",
-      "UnauthRoleName": "amplify-lookadog-dev-112038-unauthRole",
-      "StackName": "amplify-lookadog-dev-112038",
-      "StackId": "arn:aws:cloudformation:us-east-2:596298045710:stack/amplify-lookadog-dev-112038/c18f6de0-8f20-11eb-b6e1-06d5185f22d8",
-      "AmplifyAppId": "dqgkssjfuecrm"
+      "DeploymentBucketName": "amplify-lookadog-dev-90340-deployment",
+      "UnauthRoleName": "amplify-lookadog-dev-90340-unauthRole",
+      "StackName": "amplify-lookadog-dev-90340",
+      "StackId": "arn:aws:cloudformation:us-east-2:596298045710:stack/amplify-lookadog-dev-90340/1e23d330-9169-11eb-82f0-0a66227d48ea",
+      "AmplifyAppId": "d3lzq7adm3w8rh"
     },
     "categories": {
       "auth": {
-        "lookadogc0904ff7": {}
+        "lookadog73d7aad5": {}
       }
     }
   }

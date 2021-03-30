@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Amplify from "aws-amplify";
 import config from "./aws-exports";
 import {
@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import SignIn from "./pages/SignIn";
 
 Amplify.configure(config);
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/signin">
+            <SignIn />
           </Route>
         </Switch>
       </Router>

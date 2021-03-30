@@ -1,17 +1,18 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { UserContext } from "../../Context/UserProvider";
-import { withAuthenticator } from "@aws-amplify/ui-react"
+import Auth from "../../components/Auth";
 
 const Dashboard = () => {
     const { user } = useContext(UserContext);
+    console.log(user)
 
     return (
-        <>
+        <Auth>
             <h1>Dashboard</h1>
-            <p>Hello {user.username}</p>
-        </>
+            {/* <p>Hello {user.attributes.email}</p> */}
+     </Auth>
     )
 };
 
 
-export default withAuthenticator(Dashboard);
+export default Dashboard;

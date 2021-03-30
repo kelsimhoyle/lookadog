@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
-import { AmplifySignIn, AmplifySignOut } from "@aws-amplify/ui-react";
+import {  AmplifySignOut } from "@aws-amplify/ui-react";
 import { UserContext } from "../../Context/UserProvider";
 import { Link } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-
 const Header = () => {
-    const { user, signOut } = useContext(UserContext);
+    const { user } = useContext(UserContext);
+    console.log(user)
 
     return (
         <div>
@@ -22,10 +22,10 @@ const Header = () => {
                     <Navbar.Text>
                         {user ? (
                             <div>
-                                <h2>Hello {user.username}!</h2>
+                                <h2>Hello {user.attributes["custom:name"]}!</h2>
                                 <AmplifySignOut />
                             </div>
-                        ) : (<button>Sign In</button>)}
+                        ) : (<Link to="/signin">Sign In</Link>)}
                     </Navbar.Text>
                 </Navbar.Collapse>
             </Navbar>
